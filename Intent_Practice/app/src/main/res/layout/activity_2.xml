@@ -29,7 +29,8 @@
         android:layout_marginTop="32dp"
         android:text="Call"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:onClick="call"/>
 
     <Button
         android:id="@+id/button3"
@@ -41,7 +42,8 @@
         android:text="Open Website"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:onClick="goToSite"/>
 
     <Button
         android:id="@+id/button4"
@@ -51,5 +53,6 @@
         android:text="Goto Activity 1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        android:onClick="goToActivity1"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
