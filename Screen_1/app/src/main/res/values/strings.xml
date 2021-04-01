@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Screen_1</string>
+    <string name="PageName">REGISTRATION PAGE</string>
+    <string name="EmailFieldName">Email Address</string>
+    <string name="FullNameField">Full Name</string>
+    <string name="PasswordField">Password</string>
+    <string name="RegisterButton">Register</string>
+    <string name="CheckBoxText"><![CDATA[I accept terms & Conditions.]]></string>
 </resources>
