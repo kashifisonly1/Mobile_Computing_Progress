@@ -27,6 +27,7 @@
         android:layout_marginTop="32dp"
         android:text="0"
         android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/increment"
         app:layout_constraintStart_toEndOf="@+id/decrement"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -34,14 +35,15 @@
         android:id="@+id/decrement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="36dp"
         android:background="#E91E63"
         android:onClick="subtract"
         android:padding="0px"
         android:text="-"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/changeActivity"
+        app:layout_constraintEnd_toStartOf="@+id/changeActivity"
+        app:layout_constraintHorizontal_bias="0.413"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -49,16 +51,16 @@
         android:id="@+id/increment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:background="#4CAF50"
+        android:onClick="add"
         android:padding="0px"
         android:text="+"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/counter"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:onClick="add"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/changeActivity"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/changeActivity"
