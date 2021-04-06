@@ -16,7 +16,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mediaPlayer= MediaPlayer.create(this,R.raw.bg);
         mediaPlayer.setLooping(true);
+        mediaPlayer.setVolume(0,0.2f);
         mediaPlayer.start();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mediaPlayer.stop();
     }
 
     public void startApp(View view) {
