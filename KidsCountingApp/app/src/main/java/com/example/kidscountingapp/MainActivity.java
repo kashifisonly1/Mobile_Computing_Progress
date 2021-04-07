@@ -20,13 +20,8 @@ public class MainActivity extends AppCompatActivity {
         mediaPlayer.start();
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        mediaPlayer.stop();
-    }
-
     public void startApp(View view) {
+        mediaPlayer.stop();
         Intent intent= new Intent(this, PlayCounting.class);
         startActivity(intent);
     }
