@@ -22,5 +22,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void LoadFragment2(View view) {
+        Fragment2 fragment2 = new Fragment2();
+        FragmentTransaction transaction =getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.linearLayout, fragment2);
+        transaction.commit();
     }
 }
