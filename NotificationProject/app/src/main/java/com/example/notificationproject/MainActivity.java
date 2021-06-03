@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
     @RequiresApi(api= Build.VERSION_CODES.O)
     public void createNotification(View view) {
-        notificationId++;
         String channelId="channel_1";
         CharSequence name = getString(R.string.app_name);
         int importance = NotificationManager.IMPORTANCE_HIGH;
@@ -31,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 .setContentText("You have new messages")
                 .setSmallIcon(R.drawable.ic_launcher_foreground)
                 .setChannelId(channelId)
+                .setVibrate(new long[]{0,500,1000})
                 .build();
         NotificationManager notificationManager = getSystemService(NotificationManager.class);
         notificationManager.createNotificationChannel(notificationChannel);
