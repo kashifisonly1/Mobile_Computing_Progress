@@ -12,6 +12,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    int notificationId = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,8 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     @RequiresApi(api= Build.VERSION_CODES.O)
     public void createNotification(View view) {
-
-        int notificationId = 1;
+        notificationId++;
         String channelId="channel_1";
         CharSequence name = getString(R.string.app_name);
         int importance = NotificationManager.IMPORTANCE_HIGH;
