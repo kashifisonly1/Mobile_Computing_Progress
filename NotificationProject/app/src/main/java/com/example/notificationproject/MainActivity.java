@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 .setSmallIcon(R.drawable.ic_launcher_foreground)
                 .setChannelId(channelId)
                 .setVibrate(new long[]{0,500,1000})
-                .setLights(Color.parseColor("#FFFFFF"), 5000, 5000)
+                .setLights(0xFF00FF00, 300, 100)
                 .build();
         NotificationManager notificationManager = getSystemService(NotificationManager.class);
         notificationManager.createNotificationChannel(notificationChannel);
